@@ -1,6 +1,6 @@
 let divar= [
     {
-        image:"https://s101.divarcdn.com/static/thumbnails/1643006555/QYrr_a9_.webp",
+        image:"gro://s101.divarcdn.com/static/thumbnails/1643006555/QYrr_a9_.webp",
         title:"جنت آباد.۸۵متری.۲خ. گزینه",
         price:"۲٬۸۵۰٬۰۰۰٬۰۰۰ تومان",
         category:"خونه",
@@ -61,7 +61,7 @@ function renderList(){
     let n = "";
     for(let i=0; i < divar.length; i++){
         console.log(divar[i]);
-        n += "<li>" + divar[i].title + "</li>"
+        n += "<div><img src=" + divar[i].image + "/> <span><li><h4>" + divar[i].title + "</h4></li><li>" + divar[i].price +"</li><li><span>" + divar[i].when +"</span> در <span>" + divar[i].where + "</span></li></div>"
     }
     document.querySelector("#divar-list ul").innerHTML = n;
 }

@@ -1,9 +1,46 @@
 <html>
     <head>
         <title>divar</title>
+        <style>
+            *,*:after, *:before {
+                border:border-box;
+            }
+            html{
+            }
+            li {
+                list-style: none;
+            }
+            #divar-list{
+                max-width: 1200px;
+                margin: 0 auto;
+                
+            }
+            #divar-list ul{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #divar-list ul div {
+                display: flex;
+                border: 2px solid black;
+                flex-basis: 30%;
+                padding: 10px;
+                justify-content: space-between;
+            }
+            #divar-list ul div span{
+                text-align: right;
+                
+            }
+            #divar-list ul img{
+                height: 200px;
+                width: 200px;
+            }
+           
+        </style>
     </head>
     <body>
-        <div id="divar-list"></div>
+        <div id="divar-list">
+            <ul></ul>
+        </div>
         <script src="divarTask.js"></script>
     </body>
 </html>
